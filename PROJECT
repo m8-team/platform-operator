@@ -8,4 +8,14 @@ layout:
 - go.kubebuilder.io/v4
 projectName: platform-operator
 repo: m8.team/platform
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: m8.team
+  group: platform
+  kind: Folder
+  path: m8.team/platform/api/v1
+  version: v1
 version: "3"
